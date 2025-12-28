@@ -1,6 +1,6 @@
 
 
-public class BST 
+public class AVL
 {
     public static void main(String args[])
     {
@@ -30,8 +30,9 @@ public class BST
 
     class Node
     {
-        int val;
+        int val,height;
         Node left,right;
+        
 
 
         public Node()
@@ -39,7 +40,7 @@ public class BST
             this.val=0;
             this.left=null;
             this.right=null;
-            
+            this.height=1;
         }
 
         public Node(int val)
@@ -47,6 +48,7 @@ public class BST
             this.val=val;
             this.left=null;
             this.right=null;
+            this.height=1;
 
         }
 
